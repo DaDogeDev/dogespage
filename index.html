@@ -23,9 +23,8 @@
             padding: 10px;
             margin-left: 15%;
             margin-right: 15%;
-            
         }
-        h1, h2, h3, h4, h5, h6, p, font, summary {
+        h1, h2, h3, h4, h5, h6, p, font, summary, li {
             font-weight: 800;
             font-size: 25px;
             -webkit-text-fill-color: fill;
@@ -42,18 +41,64 @@
             font-size: 20px;
             font-weight: 400;
         }
+
+        .sideMenu {
+            position: fixed;
+            background: url("bg.jpg") repeat;
+            box-shadow: inset 0.2em 0.2em 0.2em rgba(255,255,255,0.5), inset -0.2em -0.2em 0.2em rgba(0,0,0,0.5);
+            width: 15%;
+            height: 100%;
+        }
         
+        @media (max-width: 768px) {
+            .header {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .contents {
+                margin: 5%;
+            }
+            .sideMenu {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    .secret {
+        cursor: url("mouse.cur"), auto;
+    }
     </style>
 </head>
 <body>
-    
+    <div class="sideMenu" style="overflow-y: scroll; height:100%;">
+        <h1>Music Player</h1>
+        <audio controls loop>
+            <source src="bg.mp3" type="audio/mp3">
+        </audio>
+        <ul>
+            <summary>Other Sites:</summary>
+            <li><a href="https://dadogedev.github.io/halftmlife/">HalfTMLife</a></li>
+            <li><a href="https://dadogedev.github.io/searchoverflow/">Search Overflow</a></li>
+            <li><a href="https://dadogedev.github.io/retrowindowstools/">Retro Windows Tools</a></li>
+        </ul>
+        <ul>
+            <summary>Links:</summary>
+            <li><a href="https://www.youtube.com/@DaDogeDev">Youtube Channel</a></li>
+            <li><a href="https://x.com/MiloshDaDogeDev">X/Twitter</a></li>
+            <li><a href="https://www.reddit.com/user/MilosDaDogeDev/">Reddit</a></li>
+            <li><a href="https://www.twitch.tv/dadogedev">Twitch</a></li>
+            <li><a href="https://github.com/DaDogeDev">Github</a></li>
+            <li><a href="https://www.roblox.com/users/1486392949/profile">Roblox</a></li>
+            <li><a href="https://gamebanana.com/members/2730684">Gamebanana</a></li>
+            <li>Discord Username: dadogedev</li>
+            <li>Email: dadogedev@gmail.com</li>
+        </ul>
+        <a href="executer.html"><img class="secret" src="SHIBA.gif" style="width:auto; height:auto;"></a>
+    </div>
     
     <div class="header">
         <h1>Welcome to <img src="DaDogeDev.gif" alt="Logo" style="width: 25%; height: auto;"> page</h1>
-        <h1>Music Player</h1>
-        <audio id="player" preload="auto" autoplay controls loop>
-            <source src="bg.mp3" type="audio/mp3">
-        </audio>
     </div>
 
     <div class="contents">
@@ -116,6 +161,6 @@
 
         <h1><img src="email.gif" alt="Email" style="width: auto; height: auto;"> dadogedev <img src="E-mail1.gif" alt="Email" style="width: auto; height: auto;"> gmail.com</h1>
         <h1><img src="emailakitadk.gif" alt="EmailDog" style="width: auto; height: auto;"></h1>
-      </div>
+    </div>
 </body>
 </html>
